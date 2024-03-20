@@ -6,11 +6,7 @@
 
 const list = document.querySelectorAll("li.item");
 
-console.log("Number of catagories:", list.length);
-
-list.forEach((element) => {
-  console.log(element.querySelector("h2").textContent);
-  console.log(
-    element.querySelectorAll("li").length + " items in the category."
-  );
+list.forEach((item) => {
+  console.log(item.querySelector("h2").textContent);
+  console.log(item.querySelectorAll("li").length);
 });
